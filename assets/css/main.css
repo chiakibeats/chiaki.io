@@ -6,6 +6,32 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+:root {
+	/* --theme-color-back: #97eb9f; */
+	--theme-color-back: #59c564;
+	
+	/* --theme-color-gradient-1: #e1ee52; */
+	--theme-color-gradient-1: #b6c231;
+	/* --theme-color-gradient-2: #4ee6f4; */
+	--theme-color-gradient-2: #23acb8;
+	/* --theme-color-back: #935d8c;
+	--theme-color-gradient-1: #e37682;
+	--theme-color-gradient-2: #5f4d93; */
+	--theme-color-highlight: #4ee6f4;
+	/* --theme-color-highlight: #8cc9f0; */
+	--theme-color-button-hover: #7EEDF7;
+	--theme-color-button-active: #36E2F2;
+	/* --theme-color-icon-gradient-1: #efa8b0;
+	--theme-color-icon-gradient-2: #c79cc8;
+	--theme-color-icon-gradient-3: #a89cc8;
+	--theme-color-icon-gradient-4: #9bb2e1; */
+	--theme-color-icon-gradient-1: #e1ee52;
+	--theme-color-icon-gradient-2: #bced79;
+	--theme-color-icon-gradient-3: #97eb9f;
+	--theme-color-icon-gradient-4: #73e9ca;
+	--theme-color-icon-gradient-5: #4ee6f4;
+	/* --theme-color-icon-gradient-5: #8cc9f0; */
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -99,11 +125,11 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-color: var(--theme-color-back);
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, var(--theme-color-gradient-1) 15%, var(--theme-color-gradient-2) 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, var(--theme-color-gradient-1) 15%, var(--theme-color-gradient-2) 85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, var(--theme-color-gradient-1) 15%, var(--theme-color-gradient-2) 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, var(--theme-color-gradient-1) 15%, var(--theme-color-gradient-2) 85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -120,7 +146,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		background-color: var(--theme-color-back);
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -1957,7 +1983,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #8cc9f0;
+			background-color: var(--theme-color-highlight);
 			color: #ffffff !important;
 			box-shadow: none;
 		}
@@ -1967,7 +1993,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #9acff2;
+				background-color: var(--theme-color-button-hover);
 			}
 
 			input[type="submit"].primary:active,
@@ -1975,7 +2001,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #7ec3ee;
+				background-color: var(--theme-color-button-active);
 			}
 
 			input[type="submit"].primary.icon:before,
@@ -2157,8 +2183,8 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #8cc9f0;
-			box-shadow: 0 0 0 1px #8cc9f0;
+			border-color: var(--theme-color-highlight);
+			box-shadow: 0 0 0 1px var(--theme-color-highlight);
 		}
 
 	select {
@@ -2167,7 +2193,7 @@ input, select, textarea {
 
 		select option {
 			color: #ffffff;
-			background: #935d8c;
+			background: var(--theme-color-back);
 		}
 
 	input[type="checkbox"] + label,
@@ -2185,13 +2211,13 @@ input, select, textarea {
 	input[type="radio"]:checked + label:before {
 		background-color: #ffffff;
 		border-color: #ffffff;
-		color: #935d8c;
+		color: var(--theme-color-back);
 	}
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #8cc9f0;
-		box-shadow: 0 0 0 1px #8cc9f0;
+		border-color: var(--theme-color-highlight);
+		box-shadow: 0 0 0 1px var(--theme-color-highlight);
 	}
 
 	::-webkit-input-placeholder {
@@ -2291,23 +2317,23 @@ input, select, textarea {
 			}
 
 		.icon.style1 {
-			color: #efa8b0;
+			color: var(--theme-color-icon-gradient-1);
 		}
 
 		.icon.style2 {
-			color: #c79cc8;
+			color: var(--theme-color-icon-gradient-2);
 		}
 
 		.icon.style3 {
-			color: #a89cc8;
+			color: var(--theme-color-icon-gradient-3);
 		}
 
 		.icon.style4 {
-			color: #9bb2e1;
+			color: var(--theme-color-icon-gradient-4);
 		}
 
 		.icon.style5 {
-			color: #8cc9f0;
+			color: var(--theme-color-icon-gradient-5);
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -2884,23 +2910,23 @@ input, select, textarea {
 		}
 
 			.statistics li.style1 {
-				background-color: #efa8b0;
+				background-color: var(--theme-color-icon-gradient-1);
 			}
 
 			.statistics li.style2 {
-				background-color: #c79cc8;
+				background-color: var(--theme-color-icon-gradient-2);
 			}
 
 			.statistics li.style3 {
-				background-color: #a89cc8;
+				background-color: var(--theme-color-icon-gradient-3);
 			}
 
 			.statistics li.style4 {
-				background-color: #9bb2e1;
+				background-color: var(--theme-color-icon-gradient-4);
 			}
 
 			.statistics li.style5 {
-				background-color: #8cc9f0;
+				background-color: var(--theme-color-icon-gradient-5);
 			}
 
 			.statistics li strong, .statistics li b {
@@ -3411,7 +3437,7 @@ input, select, textarea {
 			#main input[type="button"].primary,
 			#main button.primary,
 			#main .button.primary {
-				background-color: #8cc9f0;
+				background-color: var(--theme-color-highlight);
 				color: #ffffff !important;
 				box-shadow: none;
 			}
@@ -3421,7 +3447,7 @@ input, select, textarea {
 				#main input[type="button"].primary:hover,
 				#main button.primary:hover,
 				#main .button.primary:hover {
-					background-color: #9acff2;
+					background-color: var(--theme-color-button-hover);
 				}
 
 				#main input[type="submit"].primary:active,
@@ -3429,7 +3455,7 @@ input, select, textarea {
 				#main input[type="button"].primary:active,
 				#main button.primary:active,
 				#main .button.primary:active {
-					background-color: #7ec3ee;
+					background-color: var(--theme-color-button-active);
 				}
 
 				#main input[type="submit"].primary.icon:before,
@@ -3458,8 +3484,8 @@ input, select, textarea {
 			#main input[type="email"]:focus,
 			#main select:focus,
 			#main textarea:focus {
-				border-color: #8cc9f0;
-				box-shadow: 0 0 0 1px #8cc9f0;
+				border-color: var(--theme-color-highlight);
+				box-shadow: 0 0 0 1px var(--theme-color-highlight);
 			}
 
 		#main select {
@@ -3491,8 +3517,8 @@ input, select, textarea {
 
 		#main input[type="checkbox"]:focus + label:before,
 		#main input[type="radio"]:focus + label:before {
-			border-color: #8cc9f0;
-			box-shadow: 0 0 0 1px #8cc9f0;
+			border-color: var(--theme-color-highlight);
+			box-shadow: 0 0 0 1px var(--theme-color-highlight);
 		}
 
 		#main ::-webkit-input-placeholder {
@@ -3546,10 +3572,10 @@ input, select, textarea {
 
 		#main header.major h2:after {
 			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			background-image: -moz-linear-gradient(90deg, var(--theme-color-icon-gradient-1), var(--theme-color-icon-gradient-3), var(--theme-color-icon-gradient-5));
+			background-image: -webkit-linear-gradient(90deg, var(--theme-color-icon-gradient-1), var(--theme-color-icon-gradient-3), var(--theme-color-icon-gradient-5));
+			background-image: -ms-linear-gradient(90deg, var(--theme-color-icon-gradient-1), var(--theme-color-icon-gradient-3), var(--theme-color-icon-gradient-5));
+			background-image: linear-gradient(90deg, var(--theme-color-icon-gradient-1), var(--theme-color-icon-gradient-3), var(--theme-color-icon-gradient-5));
 		}
 
 		#main table tbody tr {
