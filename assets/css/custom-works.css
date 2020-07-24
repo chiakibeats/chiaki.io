@@ -7,9 +7,14 @@ div.works::after {
 }
 
 div.works > div.works-item {
-    width: 48%;
-    margin-right: 2%;
+    width: 48.5%;
     float: left;
+    display: block;
+    margin-bottom: 2em;
+}
+
+div.works > div.works-item:nth-child(odd) {
+    margin-right: 3%;
 }
 
 @media screen and (max-width: 980px) {
