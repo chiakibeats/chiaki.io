@@ -147,7 +147,7 @@ input, select, textarea {
 
 	body {
 		background-color: var(--theme-color-back);
-		color: rgba(255, 255, 255, 0.65);
+		color: rgba(255, 255, 255, 0.75);
 	}
 
 	body, input, select, textarea {
@@ -3027,13 +3027,13 @@ input, select, textarea {
 			display: inline-block;
 			margin-left: 4em;
 			padding: 0.65em;
-			border-radius: 100%;
-			border: solid 1px;
+			/* border-radius: 100%;
+			border: solid 1px; */
 		}
 
 			.spotlight .image img {
 				display: block;
-				border-radius: 100%;
+				/* border-radius: 100%; */
 				width: 16em;
 			}
 
